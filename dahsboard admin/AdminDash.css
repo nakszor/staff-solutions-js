@@ -1,0 +1,137 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    border: solid;
+}
+.navbar-admin{
+    width: 100%;
+   
+    background-color: var(--white-fixed);
+    border-bottom: 1px solid var(--grey4);
+}
+.section-admin{
+    height: fit-content;
+    padding: 15px 10px;
+    width: 100%;
+}
+.ul-companies{
+    gap: 20px;  
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    width: 100%;
+    padding: 15px 5px;
+    border-radius: 8px;
+}
+.li-companies{
+    width: 220px;
+    height: 150px;
+    min-width: 220px;
+    min-height: 150px;
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    flex-direction: column;
+    text-align: center;
+    color:  var(--grey3);
+    background-color: var(--white-fixed);
+    border-radius: 8px ;
+}
+.title3{
+    font-weight: 700;
+    color: var(--grey1);
+}
+.space{
+    margin-bottom: 15px;
+}
+.btn-sector{
+    border: solid 1px var(--grey4);
+    background: var(--white-fixed);
+    border-radius: 3px;
+}
+.btn-sector:hover{
+    background: var(--grey3);
+    color: var(--white-fixed);
+}
+.div-create-company{
+    height: 150px;
+}
+.form-create-company{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.inputs-create-company{
+    height: 30px;
+    max-width: 280px;
+    width: 80%;
+    border: solid 1px var(--grey4);
+}
+.search-bar{
+    margin: 15px 0px;
+    display: flex;
+    gap: 3px;
+}
+.search{
+    border: solid 2px var(--grey4);
+    width: 130px;
+}
+.form-select{
+    width: 200px;
+    border: solid 2px var(--grey4);
+}
+.selects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 25px 0px;
+}
+.red-alert{
+    color: var(--alert);
+}
+@media (min-width:800px) {
+    .navbar-admin{
+        display: none;
+    }
+    .margin3{
+        height: 30px;
+        display: flex;
+        align-items: center;
+        padding-left: 80px;
+     
+    }
+    .ul-companies{
+        height: fit-content;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }.companies{
+        height: 400px;
+    }
+    .container-companies{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }.li-companies{
+        width: 300px;
+    }.li-companies:hover {
+        box-shadow: 3px 3px 13px 1px rgb(146 146 146);
+    }.form-create-company{
+        height: 250px;
+        margin-bottom: 100px;
+    } .btn-sector{
+        height: 30px;
+    }
+}

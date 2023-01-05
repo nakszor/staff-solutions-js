@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/buttons.css">
+    <link rel="stylesheet" href="/css/inputs.css">
+    <link rel="stylesheet" href="./css/GlobalStyles.css">
+    <link rel="stylesheet" href="/css/partners.css">
+    <link rel="stylesheet" href="css/components.css">
+    <title>STAFF Solutions</title>
+</head>
+<header>
+    <nav class="navbar">
+        <h3 class="title1">STAFF Solutions</h3>
+        <p id="close-menu" class="close-menu hidden">X</p>
+        <div id="show-menu" class="menu-lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>  
+        </div>
+    </nav>
+    <div id="menu" class="menu hidden">
+        <ul class="ul-menu-bar ul-border">
+            <li id="partners-btn2" class="li-menu-bar padding1 li-background">Empresas Parceiras</li>
+            <li id="open-login-mobile" class="li-menu-bar padding1 border1">Login</li>
+            <li id="open-register-mobile" class="li-menu-bar padding1 border1">Cadastro</li>
+        </ul>
+    </div>
+        <nav class="nav-desktop">
+            <div class="menu-desktop">
+                <h3 class="title1">STAFF Solutions</h3>
+                <ul class="ul-menu-desktop">
+                    <li id="partners-btn1" class="li-menu-desktop li-menu-bar click">Empresas Parceiras</li>
+                    <li id="open-login-desktop" class="li-menu-desktop li-menu-bar click">Login</li>
+                    <li id="open-register-desktop" class="li-menu-desktop li-menu-bar click">Cadastro</li>
+                </ul> 
+            </div>
+        </nav>
+</header>
+<body>
+    <main class="main">
+        <div id="error-login" class="modal-1 hidden">
+            <div class="div-modal-1">
+                <h4 class="title5">Acesso não autorizado</h4>
+                <p class="text5">Essa conta não existe, logo não pode acessar a Dashboard!</p>
+                <div class="div-button1">
+                    <button id="button-modal" class="button-default">Entendi</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="div-login" class="div-form hidden">
+                <h2 class="title3">Login</h2>
+                <div>
+                    <form id="form-login" class="form-1" action="submit">
+                        <input class="input2 size1" type="email" placeholder="Seu E-mail" >
+                        <input class="input2 size1" type="password" placeholder="Sua Senha" >
+                        <button class="button-primary button-height button-default size1">Logar</button>
+                        <p class="title4">Ainda não possui cadastro</p>
+                    </form>  
+                    <div class="div-btn-register">
+                        <button id="registerbutton" class="go-to-register button-whitefixed size1 button-height button-default ">Ir para página de registro</button>
+                    </div> 
+                </div>
+            </div>
+            <div id="div-register" class="div-form hidden">
+                <div class="title-register">
+                    <h2 class="title3">Cadastro</h2>
+                    <button id="btn-voltar"class="btn-voltar button-default">Voltar</button>
+                </div>
+                <div>
+                    
+                    <form id="register-form" class="form-1" action="submit">
+                        <input class="input2 size1" type="text" placeholder="Seu username" >
+                        <input class="input2 size1" type="email" placeholder="Seu E-mail">
+                        <input class="input2 size1" type="password" placeholder="Sua Senha">
+                        <div class="div-level">
+                            <p>Nível Profissional:</p>
+                            <select class="level" name="professional-level" id="level">
+                                <option value="estágio">Estágio</option>
+                                <option value="júnior">Junior</option>
+                                <option value="pleno">Pleno</option>
+                                <option value="sênior">Sênior</option>
+                            </select>
+                        </div>
+                        <button class="button-primary button-height button-default size1">Registrar</button>
+                        <div id="btn-sucess" class="div-sucess hidden">
+                            <p  class="btn-sucess">Usuário criado com sucesso!</p>
+                            <p class="btn-sucess">Efetue login para entrar</p>
+                        </div>
+                        <p class="title4">Já possui login</p>
+                    </form>  
+                    <div class="div-btn-register">
+                        <button id="go-to-login-button" class="size1 button-whitefixed button-height button-default ">Ir para página de login</button>
+                    </div> 
+                </div>
+            </div>
+            <div id="partners" class="container-partners">
+                <div class="select-div">
+                    <select name="partners" id="select-partners" class="select-partners">
+                        <option value="Todas">Todas Empresas</option>
+                    </select>
+                </div>
+                <ul id="ul-partners" class="ul-partners">
+                 
+                </ul>
+            </div>
+        </div>  
+       </main> 
+    <script type="module" src="./script/index.js"></script>
+    <script src="/script/events.js"></script>
+</body>
+</html>

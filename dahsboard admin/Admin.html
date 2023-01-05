@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/colors.css">
+    <link rel="stylesheet" href="/css/buttons.css">
+    <link rel="stylesheet" href="/css/inputs.css">
+    <link rel="stylesheet" href="/css/GlobalStyles.css">
+    <link rel="stylesheet" href="/css/partners.css">
+    <link rel="stylesheet" href="/css/components.css">
+     <link rel="stylesheet" href="/Dashboard/dashboard.css">
+    <link rel="stylesheet" href="/dahsboard admin/AdminDash.css">
+    <title>STAFF Solutions</title>
+</head>
+<body class="body-light">
+    <header class="header">
+        <nav class="navbar-admin">
+            <h3 class="title1">STAFF Solutions</h3>
+            <p id="close-menu" class="close-menu hidden">X</p>
+            <div id="show-menu" class="menu-lines">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>  
+            </div>
+        </nav>
+        <div id="menu" class="menu hidden">
+            <ul class="ul-menu-bar ul-border">
+                <li id="partners-btn2" class="li-menu-bar padding1 li-background">Empresas</li>
+                <li id="open-login-mobile" class="li-menu-bar padding1 border1">Setores</li>
+                <li id="open-register-mobile" class="li-menu-bar padding1 border1">Departamentos</li>
+            </ul>
+        </div>
+            <nav class="nav-desktop">
+                <div class="menu-desktop">
+                    <h3 class="title1">STAFF Solutions</h3>
+                    <ul class="ul-menu-desktop">
+                        <li id="partners-btn1" class="li-menu-desktop li-menu-bar click">Empresas</li>
+                        <li id="open-login-desktop" class="li-menu-desktop li-menu-bar click">Departamentos</li>
+                        <li id="open-register-desktop" class="li-menu-desktop li-menu-bar click">Funcionários</li>
+                        <li ><button>Dark</button></li>
+                    </ul> 
+                </div>
+            </nav>
+    </header>
+    <main>
+        <section class="section-admin">
+            <div class="section1 ">
+                <div class="container-sectors ">
+                    <h3 class="title1 margin3">Setores</h3>
+                    <ul id="ul-sectors" class="ul-companies">
+                    
+                    </ul>
+                </div>
+             <div class="selects">
+                <div>
+                    <h3 class="title1 margin3">Filtrar empresas</h3>
+                </div>
+                <label for="comp1">Nome</label>
+                <select class="form-select comp1" name="comp1" id="">
+                    <option value=""></option>
+                    <option value="TodasEmpresas">Todas Empresas</option>
+                </select>
+                <label for="sec1">Setor</label>
+                <select class="form-select sec sec1" name="sec1" id="">
+                    <option value=""></option>
+                    <option value="TodosSetores">Todos Setores</option>
+                </select>
+            </div>
+            <div class="container-companies">
+                <h3 class="space title1 margin3">Empresas</h3>
+                <ul id="ul-companies" class="ul-companies companies">
+                    
+                </ul>
+            </div>
+            <div class="container-companies ">
+                <h3 class="space title1 margin3">Criar Empresa</h3>
+                <div class="div-create-company">
+                    <form id="form-create" class="form-create-company" action="submit">
+                        <input class="inputs-create-company" type="text" placeholder="Nome da empresa">
+                        <input class="time" type="time" placeholder="Horário de abertura">
+                        <input class="inputs-create-company" type="text" placeholder="O que a empresa faz...">
+                        <select class="form-select sec" name="" id="" required>
+                            <option value="">Setor</option>
+                        </select>
+                        <button class="button-default btn-sector">Criar Empresa</button>
+                    </form>
+                    <p id="sucess-create" class="hidden btn-sucess">Empresa criada com sucesso!</p>
+                </div>
+            </div>
+        </div>
+            <div class="container-companies hidden">
+                <h3 class="space title1 margin3">Departamentos</h3>
+                <div>
+                    <form  action="submit">
+                        <div class="selects">
+                            <label for="comp">Empresas</label>
+                        <select class="form-select departments comp" name="comp" id="comp-dep" required>
+                            <option value="">Todas Empresas</option>
+                        </select>
+                        <label for="deps">Departamentos</label>
+                        <select id="deps2" class="form-select departments " name="deps" id="" required></select>
+                        <button id="btn-comp-dep" class="btn-sector button-default">Filtrar</button>
+                        </div>
+                        <label for="dep">Todos Departamentos</label>
+                        <select class="form-select dep" name="dep" id="dep-comp" required>
+                            <option value="">Departamentos</option>
+                        </select>
+                        <button id="btn-dep-comp" class="btn-sector button-default">Filtrar</button>
+                    </form>
+                    <ul id="ul-departments" class="ul-companies">
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="container-companies hidden">
+                <h3 class="space title1 margin3">Criar departamento</h3>
+                <div>
+                    <form id="create-departments" class="form-create-company" action="submit">
+                        <select class="form-select comp" name="companies" id="">Empresas</select>
+                        <input class="inputs-create-company" type="text" placeholder="Nome do departamento">
+                        <input class="inputs-create-company" type="text" placeholder="Função do departamento">
+                        <button class="button-default btn-sector">Criar departamento</button>
+                        <p id="sucess-dep" class="hidden btn-sucess">Departamento Criado com sucesso!</p>
+                    </form>
+                </div>
+            </div>
+            <div class="container-companies ">
+                <h3 class="space title1 margin3">Editar departamento</h3>
+                <div>
+                    <form id="form-edit-dep" class="form-create-company" action="submit">
+                        <div class="selects"> 
+                            <label for="edit-dep">Selecionar empresa</label>
+                            <select id="emp" class="form-select comp" name="edit-dep" id="">
+                                <option value="">Empresas</option>
+                            </select>
+                            <label for="edit-dep2">Selecionar o departamento</label>
+                            <select id="dep2" class="form-select dep2" name="edit-dep2" id="">Departamento</select>
+                        </div>
+                        <input class="inputs-create-company" type="text" placeholder="Função do departamento">
+                        <button class="button-default btn-sector">Editar departamento</button>
+                        <p id="sucess2" class="btn-sucess hidden">Departamento editado com sucesso!</p>
+                        <p id="wrong1" class="red-alert hidden">Erro ao editar departamento</p>
+                    </form>
+                </div>
+            </div>
+            <div class="container-companies ">
+                <h3 class="space title1 margin3">Excluir departamento</h3>
+                <div>
+                    <form id="form-delete-dep" class="form-create-company" action="submit">
+                        <div class="selects"> 
+                            <label for="delete-dep1">Selecionar Empresa</label>
+                            <select class="form-select comp" name="delete-dep1" id="delete-dep" required>
+                            </select>
+                        </div>
+                        <div class="selects">
+                            <label for="delete-dep" >Selecionar Departamento</label>
+                            <select class="form-select" name="delete-dep" id="delete-dep1" required>
+                            </select>
+                        </div>
+                        <button class="button-default btn-sector">Excluir departamento</button>
+                        <p id="sucess3" class="btn-sucess hidden">Departamento excluido com sucesso!</p>
+                        <p id="wrong2" class="red-alert hidden">Erro ao excluir departamento</p>
+                    </form>
+                </div>
+            </div>
+        <div class="section2 ">
+            <div class="container-companies">
+                <h3 class="space title1 margin3">Usuarios</h3>
+                <div>
+                    <form id="users2" class="" action="submit">
+                        <div class="selects">
+                            <label for="open-to-work">Todos usuários</label>
+                        <select id="select-users" class="form-select" name="open-to-work" id="">
+                            <option value="todes">Todos usuários</option>
+                            <option  value="todesSemprego">Diponíveis para contratação</option>
+                        </select>
+                        <button  id="btn-users" class="button-default btn-sector">Filtrar</button>
+                        </div>
+                        <div class="selects">
+                            <label for="dep-workers">Departamentos</label>
+                            <select id="users-dep" class="form-select dep" name="dep-workers" id="">
+                                <option value="">Departamentos</option>
+                            </select>
+                            <button id="btn-dep-user" class="button-default btn-sector">Filtrar</button>
+                        </div>
+                    </form>
+                    <ul id="ul-users" class="ul-users ul-companies">
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="container-companies ">
+                <h3 class="space title1 margin3">Editar Usuário</h3>
+                <div>
+                    <form id="form-edit-user" class="form-create-company" action="submit">
+                        <div class="selects"> 
+                            <select id="user1" class="form-select" name="companies" id="">
+                                <option value="">Usuarios</option>
+                            </select>
+                            <select class="form-select" name="companies" id="">
+                                <option value="presencial">Presencial</option>
+                                <option value="home office">Home office</option>
+                            </select>
+                            <select class="form-select" name="companies" id="">
+                                <option value="júnior">Júnior</option>
+                                <option value="pleno">Pleno</option>
+                                <option value="senior">Sênior</option>
+                            </select>
+                        </div>
+                        <div class="selects"> 
+                            <button id="btn-edit-user" class="button-default btn-sector">Editar Usuário</button>
+                            <button id="btn-delete-user" class="button-default btn-sector">Excluir Usuário</button>
+                            <p id="sucess4" class="btn-sucess hidden">Usuário editado com sucesso!</p>
+                            <p id="wrong3" class="red-alert hidden">Erro ao editar usuário</p>
+                            <p id="sucess5" class="btn-sucess hidden">Usuário excluido com sucesso!</p>
+                            <p id="wrong4" class="red-alert hidden">Erro ao excluir usuário</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="container-companies ">
+                <h3 class="space title1 margin3">Contratar usuarios</h3>
+                <div>
+                    <form class="form-create-company" action="submit">
+                        <div class="selects"> 
+                            <select class="form-select dep" name="companies" id="">
+                                <option value="">Departamentos</option>
+                            </select>
+                            <select class="form-select" name="companies" id="">
+                                <option value="">usuarios</option>
+                            </select>
+                        </div>
+                        <div class="selects"> 
+                            <button class="button-default btn-sector">Contratar usuario</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="container-companies ">
+                <h3 class="space title1 margin3">Demitir usuarios</h3>
+                <div>
+                    <form class="form-create-company" action="submit">
+                        <div class="selects"> 
+                            <select class="form-select dep" name="companies" id="">
+                                <option value="">Departamentos</option>
+                            </select>
+                            <select class="form-select" name="companies" id="">
+                                <option value="">usuarios</option>
+                            </select>
+                        </div>
+                        <div class="selects"> 
+                            <button class="button-default btn-sector">Demitir usuario</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="/script/DashAdmin.js"></script>
+</body>
+</html>

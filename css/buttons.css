@@ -1,0 +1,37 @@
+.button-default{
+    border: none;
+    font-size: 12px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.button-primary{
+    color: var(--white-fixed);
+    background-color: var(--color-brand-2);
+}
+.button-primary:hover{
+    background-color: var(--color-brand-1);
+}
+.button-grey1{
+    color: var(--white-fixed);
+    background-color: var(--grey1);
+}
+.button-grey1:hover{
+    background-color: var(--grey0);
+}
+.button-height{
+    height: 28px;
+}
+.button-whitefixed{
+background-color: var(--white-fixed);
+color: var(--grey1);
+border: solid 1px var(--grey0);
+}
+.button-whitefixed:hover{
+background-color: var(--grey5);
+}
+.btn-voltar{
+    width: 45px;
+    height: 27px;
+    background-color: var(--white-fixed);
+    border: solid 1px var(--grey0);
+}

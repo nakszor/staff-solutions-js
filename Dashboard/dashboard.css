@@ -1,0 +1,67 @@
+.dash-user{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.icon-user{
+    width: 80px;
+    
+}
+.card-user{
+    background-color: var(--white-fixed);
+    width: 90%;
+    height: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+.div-img-user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin-top: 15px;
+    color: var(--grey2);
+    font-weight: 600;
+    gap: 15px;
+}
+.data-user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:  10px 0px;
+    gap: 15px;
+    color: var(--grey3);
+}
+.hidden{
+    display: none;
+}
+.dark-mode{
+    background: var(--white-fixed);
+    border: 1px solid var(--grey1);
+}
+.light-mode{
+    border: solid 1px var(--);
+}
+.btn-mode{
+    border-radius: 3px;
+    width: fit-content;
+  
+}
+.navbar-dashboard{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+}
+.navbar-light{
+    background: var(--white-fixed);
+    border-bottom: 1px solid var(--grey4);
+}
+.body-light{
+    background: var(--grey5);
+}
