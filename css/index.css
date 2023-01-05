@@ -3,6 +3,7 @@ body{
 }
 .main{
     background-color: var(--grey5);
+    height: fit-content;
 }
 .navbar{
     background: var(--white-fixed);
@@ -89,7 +90,7 @@ body{
 .container{
     display: flex;
     justify-content: center;
-    height: 85vh;
+    height: fit-content;
     padding: 15px 0;
 }
 .div-form{
