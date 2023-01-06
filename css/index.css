@@ -5,6 +5,15 @@ body{
     background-color: var(--grey5);
     height: fit-content;
 }
+.container-logo{
+    align-items: center;
+    gap: 1rem;
+}
+.container-logo img{
+    height: 30px;
+    width: 30px;
+    margin-bottom: 10px;
+}
 .navbar{
     background: var(--white-fixed);
     height: 1rem;
